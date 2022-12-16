@@ -37,7 +37,7 @@ public class RefreshTokenInterceptor implements HandlerInterceptor {
 //        }
 //        // 2.2 如果存在， 保存到ThreadLocal
 //        UserHolder.saveUser((UserDTO) user);
-        // TODO 1. 获取token
+        //  1. 获取token
         String token = request.getHeader("authorization");
         if(StrUtil.isBlankIfStr(token)) {
             // 没有获取到 token， 即没有登陆
